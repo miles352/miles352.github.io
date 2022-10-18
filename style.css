@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --background: #514240;
+    --primary: #507484;
+    --secondary: #DEBFAC;
+    --accent: #7ac044;
+    --other: #F6E42F;
+    --font-big: 'Source Code Pro', monospace;
+    --font-small: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+header {
+    background-color: var(--accent);
+    color: white;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+	padding: 0;
+}
+
+ul li:nth-child(n+2) {
+	margin-left: 25px;
+}
+
+header li {
+    list-style: none;
+	font-size: 2em;
+	display: inherit;
+}
+
+header a {
+	align-self: center;
+	text-decoration: none;
+    color: black;
+    font-family: var(--font-big);
+}
+
+#icon {
+	height: 100%;
+}
+
+header img {
+	height: 100%;
+}
+
+#hero {
+    text-align: center;
+    padding: 8em;
+	background-image: url("Assets/dog_paw.jpg");
+	background-size: cover;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 70px;
+	color: white;
+    margin: 0;
+    font-family: var(--font-big);
+}
+
+p {
+    font-size: 20px;
+    padding: 0 2em;
+}
+
+ol {
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    color: var(--accent);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-column {
+    display: flex;
+    align-items: center;
+    /* margin: 2em 2em 0 2em; */
+    font-family: var(--font-small);
+    background-color: var(--secondary);
+	color: black;
+	flex-flow: column-reverse;
+}
+
+.big-image {
+    max-width: 100%;
+}
+
+#description-2 div {
+    order: 1;
+}
+
+#description-2 img {
+    order: 2;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    width: 100%;
+    font-family: var(--font-big);
+}
+
+#animal-wrapper {
+	margin: 0 10px;
+}
+
+#animal-grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-row-gap:    20px;
+	grid-column-gap: 20px;
+}
+
+.animal {
+	background-color: var(--secondary);
+	display: flex;
+	flex-direction: column;
+    font-family: var(--font-small);
+}
+
+.animal-description {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.animal img {
+    max-width: 100%;
+}
+
+.adopt-button {
+    background-color: var(--background);
+	align-self: center;
+	margin: 15px;
+	font-size: 1.75em;
+	padding: 5px;
+	color: white;
+    border: 2px solid var(--other);
+}
+
+.adopt-button:hover {
+	cursor: pointer;
+}
+
+.info-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	padding: 5px;
+    font-size: 15px;
+}
+
+hr {
+    border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: 3px solid black;
+	padding: 0;
+    width: 90%;
+	align-self: center;
+	margin: 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #animal-grid {
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));	
+    }
+  
+    .intro-column {
+        flex-direction: row;
+        margin: 2em 2em 0 2em;
+    }
+
+    #animal-wrapper {
+        margin: 0 50px;
+    }
+
+    .big-image {
+        max-width: 40vw;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+
+    #description-2 div {
+        order: 2;
+    }
+    
+    #description-2 img {
+        order: 1;
+    }
+
+    
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #animal-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));	
+        grid-row-gap:    20px;
+        grid-column-gap: 20px;
+    }
+
+    #animal-wrapper {
+        margin: 0 100px;
+    }
+	
+	p {
+		font-size: 16px;
+	}
+
+    h1 {
+        font-size: 120px;
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+	p {
+		font-size: 20px;
+	}
+
+}
+
+@media only screen and (min-width: 1400px) {
+	p {
+		font-size: 25px;
+	}
+}
