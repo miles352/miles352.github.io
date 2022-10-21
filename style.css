@@ -20,7 +20,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    margin-bottom: 100px;
 }
 
 header {
@@ -60,20 +59,35 @@ header img {
 	height: 100%;
 }
 
-#hero {
-    
+#hero {    
     padding: 100px;
 	background-image: url("Assets/dog_paw.jpg");
 	background-size: cover;
     margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
 }
 
 h1 {
     font-size: 60px;
 	color: white;
-    margin: 0;  
     font-family: var(--font-big);
     text-align: center;
+	margin: 0 0 10px 0;
+}
+
+#donate {
+	background-color: transparent;
+	border: 3px solid white;
+	font-size: 35px;
+	color: white;
+	border-radius: 3px;
+	align-self: center;
+	padding: 5px;
+}
+
+#donate:hover {
+	cursor: pointer;
 }
 
 p {
@@ -99,7 +113,6 @@ a {
 .intro-column {
     display: flex;
     align-items: center;
-    /* margin: 2em 2em 0 2em; */
     font-family: var(--font-small);
     background-color: var(--secondary);
 	color: black;
@@ -127,7 +140,7 @@ h2 {
 }
 
 #animal-wrapper {
-	margin: 0 10px;
+	margin: 0 10px 20px 10px;
 }
 
 #animal-grid {
@@ -192,6 +205,22 @@ h3 {
     font-size: 25px;
 }
 
+footer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	font-family: var(--font-small);	
+}
+
+footer li {
+	font-size: 20px;
+	list-style-type: none;
+}
+
+footer ul {
+	padding: 0;
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -202,7 +231,7 @@ h3 {
   
     .intro-column {
         flex-direction: row;
-        margin: 2em 2em 0 2em;
+        margin: 0 2em 0 2em;
     }
 
     #animal-wrapper {
@@ -225,7 +254,7 @@ h3 {
         order: 1;
     }
 
-    ul li:nth-child(n+2) {
+    header ul li:nth-child(n+2) {
         margin-left: 25px;
     }
 
@@ -236,6 +265,16 @@ h3 {
     header li {
         align-self: auto;
     }
+	
+	footer {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;		
+	}
+	
+	footer li {
+		font-size: 25px;
+	}
 
 }
 
