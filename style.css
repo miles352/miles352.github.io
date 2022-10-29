@@ -68,6 +68,12 @@ header img {
 	flex-direction: column;
 }
 
+#hero h2 {
+	margin-top: 0;
+	text-transform: capitalize;
+	font-size: 35px;
+}
+
 h1 {
     font-size: 60px;
 	color: white;
@@ -76,17 +82,17 @@ h1 {
 	margin: 0 0 10px 0;
 }
 
-#donate {
+button {
 	background-color: transparent;
 	border: 3px solid white;
-	font-size: 35px;
+	font-size: 40px;
 	color: white;
 	border-radius: 3px;
 	align-self: center;
 	padding: 5px;
 }
 
-#donate:hover {
+button:hover {
 	cursor: pointer;
 }
 
@@ -123,6 +129,43 @@ a {
     max-width: 100%;
 }
 
+.wide-image {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	display: none;
+}
+
+.wide-img-txt {
+	color: black;
+	right: 100px;
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+
+#description-2 {
+	margin-bottom: 50px;
+}
+
+#learn-more {
+	display: none;
+}
+
+.wide-img-txt button {
+	color: black;
+	border-color: black;
+}
+
+.wide-img-txt h3 {
+	font-size: 40px;
+}
+
+.wide-img-txt h4 {
+	text-align: center;
+	font-size: 25px;
+}
+
 #description-2 div {
     order: 1;
 }
@@ -131,10 +174,24 @@ a {
     order: 2;
 }
 
+#donate-stats {
+	margin-top: 50px;
+	padding: 25px;
+}
+
+#donate-stats h3 {
+	padding: 5px;
+}
+
+#donate-stats * {
+	color: black;
+	border-color: black;
+}
+
 h2 {
     color: white;
     text-align: center;
-    font-size: 3em;
+    font-size: 50px;
     width: 100%;
     font-family: var(--font-big);
 }
@@ -253,6 +310,10 @@ footer ul {
     #description-2 img {
         order: 1;
     }
+	
+	#description-2 {
+		margin-bottom: 0;
+	}
 
     header ul li:nth-child(n+2) {
         margin-left: 25px;
@@ -275,6 +336,38 @@ footer ul {
 	footer li {
 		font-size: 25px;
 	}
+	
+	.wide-image {
+		width: 100%;
+		height: 500px;
+		object-fit: cover;
+		display: block;
+	}
+	
+	.wide-img-txt {
+		color: white;
+		position: absolute;
+		right: 100px;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.wide-img-txt button {
+		border-color: white;
+		color: white;
+	}
+
+	.wide-img-txt h3 {
+		font-size: 40px;
+	}
+
+	.wide-img-txt h4 {
+		font-size: 25px;
+	}
+	
+	#learn-more {
+		display: block;
+	}	
 
 }
 

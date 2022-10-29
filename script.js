@@ -75,7 +75,7 @@ animals.forEach(animal => {
         <div class="info-bar">
             <span>${animal.gender}</span>
             <span>${animal.breed}</span>
-            <span>${animal.age}</span>
+            <span>${animal.age} old</span>
         </div>
         <hr>
         <p class="animal-description">
@@ -85,3 +85,30 @@ animals.forEach(animal => {
 	</div>
     `
 });
+
+let loaded = false;
+
+
+var observer = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true && loaded === false) {
+		const money = document.getElementById("money");
+		const total = 192287;
+
+		money.textContent = 0;
+		let animate = setInterval(() => {
+			let newMoney = parseInt(money.textContent.replace(",", "")) + 1000;
+			if (newMoney >= total) {
+				clearInterval(animate);
+				loaded = true;
+			}
+			if (newMoney > 999) {
+				newMoney = newMoney.toString();
+				newMoney = newMoney.slice(0, newMoney.length - 3) + "," + newMoney.slice(newMoney.length - 3, newMoney.length);
+
+			}
+			money.textContent = newMoney;
+		}, 1);
+	}
+}, { threshold: [1] });
+
+observer.observe(document.querySelector("#donate-stats"));
