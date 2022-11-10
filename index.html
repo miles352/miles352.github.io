@@ -11,41 +11,47 @@
 <body>
     <header>
         <ul>
-            <li>
-				<a href="" id="icon">
-					<img src="Assets/square-small.png" alt=""/>
-				</a>
-			</li>
-			<li>
-				<a href="#">Home</a>
-			</li>
-            <li>
-				<a href="#">Donate</a>
-			</li>
-            <li>
-				<a href="#animal-wrapper">Adopt</a>
-			</li>
+            <div>
+				<li>
+					<a href="" id="icon">
+						<img src="Assets/square-small.png" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#">Loved Pets</a>
+				</li>
+			</div>
+			<div>
+				<li>
+					<a href="https://secure.aspca.org/donate/donate" target="_blank">Donate</a>
+				</li>
+				<li>
+					<a href="#animal-wrapper">Adopt</a>
+				</li>
+			</div>
         </ul>
     </header>
     <div id="hero">
         <h1>Loved Pets</h1>
-		<h2>where pets find a home</h2>
-		<button>Donate</button>
+		<h2 class="outside-title">where pets find a home</h2>
+		<button><a href="https://secure.aspca.org/donate/donate" target="_blank" style="text-decoration: none;">Donate</a></button>
     </div>
-    <div class="row">
-		<h2>About Us</h2>
-        <div class="intro-column">
-            <p>At Loved Pets Animal Rescue, we believe all animals deserve a chance to find a loving forever home. 
+    <div class="row">	
+        <div class="intro-column section">
+			<div class="row">
+				<h2 class="section-title">About Us</h2>
+            	<p>At Loved Pets Animal Rescue, we believe all animals deserve a chance to find a loving forever home. 
                 We provide initial veterinary care to rescued animals, then work to match each animal with a human family 
                 to love them and keep them safe forever. All animals are screened for diseases upon arrival, washed and groomed, 
                 and then added to our website for adoptive families to see. All potential adoptive families are also screened for 
                 adoption history, household lifestyle, and commitment to providing a safe and loving home.</p>
+			</div>
             <img class="big-image" src="Assets/cats_two.jpg" alt="Two cats sitting next to each other on a brick wall with a person petting one of them.">
         </div>
-		<h2>Volunteers</h2>
-        <div class="intro-column" id="description-2">
+        <div class="intro-column section" id="description-2">
             <img class="big-image" src="Assets/vet_cat_bath_2.jpg" alt="Two cats sitting next to each other on a brick wall with a person petting one of them.">
             <div class="row">
+				<h2 class="section-title">Volunteers</h2>
                 <p style="margin-bottom: 0;">We can always use volunteers to help keep our shelter open! Volunteers are needed to bathe and groom animals, 
                     play with pets to help them socialize and keep them happy, clean kennels and screening rooms, and help with administrative tasks in the office. 
                     If you’re interested in volunteering, please complete the steps below.</p>        
@@ -54,7 +60,7 @@
                         Complete the online application     
                     </li>
                     <li>
-                        Submit the application by emailing it to <a href="mailto:volunteer@welovepets.com">
+                        Submit the application by emailing it to <a href="mailto:volunteer@welovepets.com" class="link">
                             volunteer@welovepets.com</a>
                     </li>
                     <li>
@@ -66,7 +72,6 @@
                 </ol>  
             </div>           
         </div>
-		<h2 id="learn-more">Learn More</h2>
 		<div class="intro-column">
 			<img class="wide-image" src="Assets/dog_hold.jpg" alt="Girl holding a dog">
 			<div class="wide-img-txt">
@@ -76,16 +81,16 @@
 			</div>
 		</div>
         <div id="animal-wrapper">
-            <h2>Animals Currently Available for Adoption</h2>
+            <h2 class="outside-title">Animals Currently Available for Adoption</h2>
 			<div id="animal-grid">
 				<!-- INSERTED HERE -->
 			</div>
         </div>
 		<div class="intro-column" id="donate-stats">
-			<h2>$<span id="money">192,287</span> Raised So Far</h2>
+			<h2 class="section-title" style="width: 100%;">$<span id="money">192,287</span> Raised So Far</h2>
 			<div class="row">
 				<h3>Every dollar that you donate goes to buying food and shelter for our animals.</h3>
-				<button>Donate</button>
+				<button><a href="https://secure.aspca.org/donate/donate" target="_blank" style="text-decoration: none;">Donate</a></button>
 			</div>		
 		</div>
     </div>

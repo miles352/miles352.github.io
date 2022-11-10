@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --background: #514240;
+    --background: #544B3D;
     --primary: #507484;
     --secondary: #DEBFAC;
     --accent: #7ac044;
@@ -34,6 +34,12 @@ header ul {
     flex-direction: column;
     margin: 0;
 	padding: 0;
+	justify-content: inherit;
+
+}
+
+header div {
+	align-self: center;
 }
 
 header li {
@@ -63,7 +69,6 @@ header img {
     padding: 100px;
 	background-image: url("Assets/dog_paw.jpg");
 	background-size: cover;
-    margin-bottom: 5px;
 	display: flex;
 	flex-direction: column;
 }
@@ -72,6 +77,12 @@ header img {
 	margin-top: 0;
 	text-transform: capitalize;
 	font-size: 35px;
+}
+
+.section-title {
+	color: black;
+	text-align: center;
+	font-size: 50px;
 }
 
 h1 {
@@ -107,7 +118,13 @@ ol {
 }
 
 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link {
     color: var(--accent);
+	text-decoration: underline;
 }
 
 .row {
@@ -144,9 +161,7 @@ a {
 	padding: 5px;
 }
 
-#description-2 {
-	margin-bottom: 50px;
-}
+
 
 #learn-more {
 	display: none;
@@ -164,6 +179,10 @@ a {
 .wide-img-txt h4 {
 	text-align: center;
 	font-size: 25px;
+}
+
+.section {
+	flex-direction: column;
 }
 
 #description-2 div {
@@ -188,7 +207,7 @@ a {
 	border-color: black;
 }
 
-h2 {
+.outside-title {
     color: white;
     text-align: center;
     font-size: 50px;
@@ -288,7 +307,7 @@ footer ul {
   
     .intro-column {
         flex-direction: row;
-        margin: 0 2em 0 2em;
+        margin: 100px 2em 0 2em;
     }
 
     #animal-wrapper {
@@ -314,12 +333,21 @@ footer ul {
 	#description-2 {
 		margin-bottom: 0;
 	}
+	
+	#description-2 {
+		margin-bottom: 50px;
+	}
 
     header ul li:nth-child(n+2) {
         margin-left: 25px;
     }
 
-    header ul {
+	header ul {
+		justify-content: space-between;
+	}
+
+    header div, header ul {
+		display: flex;
         flex-direction: row;
     }
 

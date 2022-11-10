@@ -31,7 +31,7 @@ const animals = [
         img: "Assets/rosco.jpg",
         alt: "Light Brown Dog",
         gender: "Male",
-        breed: "corgi/chihuahua mix",
+        breed: "Corgi/Chihuahua mix",
         age: "8 years",
         description: "Roscoe is an older, house trained dog whose owner had to surrender him. He is ready for a home!"
     },
@@ -81,7 +81,6 @@ animals.forEach(animal => {
         <p class="animal-description">
             ${animal.description}
         </p>
-        <!-- <button class="adopt-button">Adopt</button> -->
 	</div>
     `
 });
