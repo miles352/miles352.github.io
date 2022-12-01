@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --background: #544B3D;
+    --background: #353028;
     --primary: #507484;
     --secondary: #DEBFAC;
     --accent: #7ac044;
@@ -202,9 +202,15 @@ a {
 	padding: 5px;
 }
 
-#donate-stats * {
+#stat-donate-btn {
 	color: black;
 	border-color: black;
+}
+
+#money {
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+	
 }
 
 .outside-title {
@@ -212,6 +218,7 @@ a {
     text-align: center;
     font-size: 50px;
     width: 100%;
+	margin: 20px;
     font-family: var(--font-big);
 }
 
@@ -307,11 +314,11 @@ footer ul {
   
     .intro-column {
         flex-direction: row;
-        margin: 100px 2em 0 2em;
+        margin: 50px 2em 0 2em;
     }
 
     #animal-wrapper {
-        margin: 0 50px;
+		margin: 40px 50px 0 50px;
     }
 
     .big-image {
@@ -355,6 +362,10 @@ footer ul {
         align-self: auto;
     }
 	
+	#right-aligned-nav:last-child {
+		margin-right: 20px;   
+	}
+	
 	footer {
 		flex-direction: row;
 		justify-content: space-around;
@@ -362,7 +373,7 @@ footer ul {
 	}
 	
 	footer li {
-		font-size: 25px;
+		font-size: 15px;
 	}
 	
 	.wide-image {
@@ -409,7 +420,7 @@ footer ul {
     }
 
     #animal-wrapper {
-        margin: 0 100px;
+        margin: 40px 100px 0 100px;
     }
 	
 	p {
