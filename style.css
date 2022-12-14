@@ -234,10 +234,10 @@ a {
 }
 
 .animal {
-	background-color: var(--secondary);
 	display: flex;
 	flex-direction: column;
     font-family: var(--font-small);
+	color: #dbdbdb;
 }
 
 .animal-description {
@@ -275,7 +275,7 @@ hr {
     border-left: none;
 	border-right: none;
 	border-bottom: none;
-	border-top: 3px solid black;
+	border-top: 3px solid #dbdbdb;
 	padding: 0;
     width: 90%;
 	align-self: center;
